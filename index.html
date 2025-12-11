@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="asset/fav.jpg">
+<link rel="shortcut icon" href="asset/fav.jpg" type="image/png">
+<link rel="stylesheet" href="style.css">
+<title>Point Coffee Legok 2</title>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+<div class="logo">
+    <img src="asset/icon.jpg" alt="Point Coffee Legok 2">
+</div>
+    <h1>POINT COFFEE LEGOK 2</h1>
+    <h2>Your Daily Coffee Stop</h2>
+<a onclick="playSound()" class="btn" href="https://drive.google.com/file/d/1qAUkkyZfbKUUWcs43KAgPSE7BlM7dfWT/view?usp=drivesdk" target="_blank">Main Menu</a>
+<a onclick="playSound()" class="btn" href="https://www.tiktok.com/@pclegok2" target="_blank">TikTok</a>
+<a onclick="playSound()" class="btn" href="https://www.google.com/maps/place/Indomaret+Legok+2/data=!4m2!3m1!1s0x0:0x2cbea9e49a801102?sa=X&ved=1t:2428&ictx=111" target="_blank">Google Maps</a>
+<a onclick="playSound()" class="btn" href="https://wa.me/628xxxxxxxxxx" target="_blank"> WhatsApp</a>
+
+<audio id="clickSound">
+    <source src="asset/sound.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    function playSound() {
+        const s = document.getElementById("clickSound");
+        s.currentTime = 0,0;
+        s.play();
+    }
+</script>
+
+<footer>© 2025 Point Coffee Legok 2</footer>
+</body>
+</html>
