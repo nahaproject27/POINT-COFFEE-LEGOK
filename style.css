@@ -51,19 +51,31 @@ h2 {
 }
 
 .btn {
-    display: block;
-    width: 90%;
-    margin: 12px auto;
-    padding: 13px 20px;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    color: white;
-    border-radius: 14px;
-    background: linear-gradient(145deg, #0daa50, #0a7a3c);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
-    transition: 0.2s ease-in-out;
-}
+        display: block;
+        width: 92%;
+        max-width: 360px;
+        padding: 15px 20px;
+        margin: 12px auto;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 14px;
+        color: #ffffff;
+        background: linear-gradient(145deg, #0daa50, #0a7a3c);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.33), 
+                    inset 0 0 10px rgba(255,255,255,0.2);
+        backdrop-filter: blur(3px);
+        transition: 0.25s ease;
+        animation: fadeInUp 1s ease forwards;
+    }
+
+    .btn:hover {
+        transform: scale(1.08);
+        background: linear-gradient(145deg, #0a7a3c, #0daa50);
+        box-shadow: 0 6px 22px rgba(0,0,0,0.4),
+                    0 0 12px rgba(255,255,255,0.5);
+    }
+
 
 @media (hover: hover) {
    .btn:hover {
@@ -86,3 +98,4 @@ footer {
         from { opacity: 0; transform: translateY(25px); }
         to { opacity: 1; transform: translateY(0); }
     }
+
